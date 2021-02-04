@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link1 rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Aqui será a zona dos valores -->
+    <div class="classe1"><span id="field">0</span></div>
+    <!-- <input type="number" id="field" value="0"> -->
+    <div>
+        <!-- Como funciona assim o cliente carrega no botão e depois deve ser incrementado o valor no ecrã como se trata-se de uma calculadora -->
+        <div>
+            <input type="button" value="%" height="300" width="300" class="classe2">
+            <input type="button" value="C" onclick="apagarTudo()">
+            <input type="button" value="A" onclick="apagarValor()">
+        </div>
+        <div>
+            <input type="button" value="1/x">
+            <input type="button" value="x^2">
+            <input type="button" value="raiz">
+            <input type="button" value="/" onclick="calcular('/')">
+        </div>
+        <div>
+            <input type="button" value="7" onclick="myFunction('7')">
+            <input type="button" value="8" onclick="myFunction('8')">
+            <input type="button" value="9" onclick="myFunction('9')">
+            <input type="button" value="X" onclick="calcular('*')">
+            
+        </div>
+        <div>
+            <input type="button" value="4" onclick="myFunction('4')">
+            <input type="button" value="5" onclick="myFunction('5')">
+            <input type="button" value="6" onclick="myFunction('6')">
+            <input type="button" value="-" onclick="calcular('-')">
+        </div>
+        <div>
+            <input type="button" value="1" onclick="myFunction('1')">
+            <input type="button" value="2" onclick="myFunction('2')">
+            <input type="button" value="3" onclick="myFunction('3')">
+            <input type="button" value="+" onclick="calcular('+')">
+        </div>
+        <div>
+            <input type="button" value="+/-" onclick="myFunction('negativo')">
+            <input type="button" value="0" onclick="myFunction('0')">
+            <input type="button" value="," onclick="myFunction(',')">
+            <input type="button" value="=" onclick="calcular('=')">
+        </div>
+    </div>
+</body>
+</html>
